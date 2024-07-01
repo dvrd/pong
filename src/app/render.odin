@@ -6,7 +6,8 @@ render :: proc(app: ^State) {
 	rl.BeginDrawing()
 	defer rl.EndDrawing()
 
-	rl.DrawRectangle(app.pos, 100, 180, 30, rl.WHITE)
+	rl.DrawRectangleRec(app.paddle.pos, rl.WHITE)
+	rl.DrawRectangleRec(app.ball.pos, rl.RED)
 
 	rl.DrawFPS(10, 10)
 

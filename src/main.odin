@@ -23,8 +23,8 @@ main :: proc() {
 	}
 
 	version += 1
-	api.init_window()
 	api.init()
+	api.init_window()
 
 	old_apis := make([dynamic]AppAPI, default_allocator)
 
